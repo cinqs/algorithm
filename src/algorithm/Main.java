@@ -3,6 +3,14 @@ package algorithm;
 import java.util.Arrays;
 
 public class Main {
+	
+	static HarmonicSeries harmonicSeries = new HarmonicSeries();
+	public static void main(String args []){
+		double hs = harmonicSeries.h(2);
+		System.out.println(hs);
+	}
+	
+	
 	public static int rank(int key, int[] a){
 		int lo = 0;
 		int hi = a.length - 1;
@@ -21,9 +29,7 @@ public class Main {
 		return -1;
 	}
 	
-	public static void main(String args []){
-		System.out.println(isPrime(643));
-	}
+	
 	
 	public static int isPrime(int varNumber){
 		if(varNumber < 2)
