@@ -1,14 +1,39 @@
 package algorithm;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Main {
 	
-	static HarmonicSeries harmonicSeries = new HarmonicSeries();
+	//static HarmonicSeries harmonicSeries = new HarmonicSeries();
+	
 	public static void main(String args []){
-		double hs = harmonicSeries.h(2);
-		System.out.println(hs);
+		
+		double[] getMax = {12, 34, 45, 89, 7, 564};
+		
+		//double hs = harmonicSeries.h(2);
+		
+		//GetMax gMax = new GetMax();
+		
+		//System.out.println(gMax.getMax(getMax));
+		
+		//GetMin gMin = new GetMin();
+		
+		//System.out.println(gMin.getMin(getMax));
+		
+		RecursiveSearch rSearch = new RecursiveSearch();
+		
+		//System.out.println(rSearch.getIndex(45, getMax));
+		
+		SortArray sArray = new SortArray();
+		
+		double[] showArr = sArray.sortArray(getMax);
+		
+		System.out.println(rSearch.getIndex(7, getMax));
+		//this is actully not solve the problem, however, this problem is valueless, though
 	}
+	
+	
 	
 	
 	public static int rank(int key, int[] a){
