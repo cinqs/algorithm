@@ -2,6 +2,7 @@ package algorithm;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import edu.princeton.cs.algs4.*;
 
 public class Main {
 	
@@ -28,8 +29,9 @@ public class Main {
 		SortArray sArray = new SortArray();
 		
 		double[] showArr = sArray.sortArray(getMax);
+		StdOut.println(rSearch.getIndex(7, getMax));
 		
-		System.out.println(rSearch.getIndex(7, getMax));
+		//System.out.println(rSearch.getIndex(7, getMax));
 		//this is actully not solve the problem, however, this problem is valueless, though
 	}
 	
