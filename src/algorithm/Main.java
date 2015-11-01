@@ -9,33 +9,14 @@ public class Main {
 	//static HarmonicSeries harmonicSeries = new HarmonicSeries();
 	
 	public static void main(String args []){
+		System.out.println(Double.compare(0.5, 0.4));
 		
-		double[] getMax = {12, 34, 45, 89, 7, 564};
-		
-		//double hs = harmonicSeries.h(2);
-		
-		//GetMax gMax = new GetMax();
-		
-		//System.out.println(gMax.getMax(getMax));
-		
-		//GetMin gMin = new GetMin();
-		
-		//System.out.println(gMin.getMin(getMax));
-		
-		RecursiveSearch rSearch = new RecursiveSearch();
-		
-		//System.out.println(rSearch.getIndex(45, getMax));
-		
-		SortArray sArray = new SortArray();
-		
-		double[] showArr = sArray.sortArray(getMax);
-		StdOut.println(rSearch.getIndex(7, getMax));
-		
-		//System.out.println(rSearch.getIndex(7, getMax));
-		//this is actully not solve the problem, however, this problem is valueless, though
+		Test.test1();
 	}
 	
-	
+	public static boolean test1(double x, double y){
+		return (x < 1 && x > 0 && y < 1 && y > 0);
+	}
 	
 	
 	public static int rank(int key, int[] a){
